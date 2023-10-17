@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-display">
+      <div class="score">
+        <div class="title">
+          ROCK <br />
+          PAPER <br />SCISSORS
+        </div>
+        <div class="computerscore">
+          <span>COMPUTER SCORE</span>
+
+          <span class="zero" id="computer-score">0</span>
+        </div>
+        <div class="yourscore">
+          <span>YOUR <br />SCORE</span>
+
+          <span class="zero" id="user-score">0</span>
+        </div>
+      </div>
+      <div class="main">
+        <div class="section1">
+          <div class="triangle">
+            <div class="line line1"></div>
+            <div class="line line2"></div>
+            <div class="line line3"></div>
+          </div>
+          <div class="yourchoice">
+            <div class="set1circle">
+              <div class="rock" id="rock">
+                <img src="icons8-fist-67 1.png" alt="" />
+              </div>
+              <div class="Scissor" id="scissor">
+                <img src="17911 1.png" alt="" />
+              </div>
+            </div>
+
+            <div class="paper" id="paper">
+              <img src="icons8-hand-64 1.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="rulesection">
+          <div class="rule-display hidden">
+            <div class="cross">
+              <img src="X.png" alt="" />
+            </div>
+            <div class="gamerules">
+              <div class="heading">
+                <span>Game Rules</span>
+              </div>
+              <ul class="list-rules">
+                <li>
+                  <span
+                    >Rock beats scissors, scissors beat paper, and paper beats
+                    rock.</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Agree ahead of time whether you’ll count off “rock, paper,
+                    scissors, shoot” or just “rock, paper, scissors.”</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >Use rock, paper, scissors to settle minor decisions or
+                    simply play to pass the time</span
+                  >
+                </li>
+                <li>
+                  <span
+                    >If both players lay down the same hand, each player lays
+                    down another hand</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rule1">
+            <div class="rules"><span class="next-rules">RULES</span></div>
+          </div>
+
+          <div class="rule2 hidden">
+            <div class="rules"><span class="next-rules">RULES</span></div>
+            <div class="next"><span class="next-rules">NEXT</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="afterselection hidden">
+        <div class="youpicked">
+          <span>YOU PICKED</span>
+          <div class="yourselection">
+            <div class="circle">
+              
+              <div class="hide-circle hidden"></div>
+              <div class="hide-circle hidden"></div>
+              <div class="hide-circle hidden"></div>
+              <div class="childchange">
+                <img src="icons8-fist-67 1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="result">
+          <span id="win" class="hidden">YOU WIN </span>
+          <span id="loss" class="hidden" >YOU LOST </span>
+          <span id="against">AGAINST PC</span>
+          <div class="playagain">
+            <button class="button">PLAY AGAIN</button>
+          </div>
+        </div>
+        <div class="pc-picked">
+          <span>PC PICKED</span>
+          <div class="pcselection">
+            <div class="circle">
+              
+              <div class="hide-circle hidden"></div>
+              <div class="hide-circle hidden"></div>
+              <div class="hide-circle hidden"></div>
+              <div class="childchange">
+                <img src="icons8-fist-67 1.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="win-celebration hidden">
+      <div class="animation">
+        <div class="star">
+          <img src="Star 1.png" alt="" id="star-1" />
+          <img src="Star 2.png" alt="" id="star-2" />
+          <img src="Star 3.png" alt="" id="star-3" />
+          <img src="Star 4.png" alt="" id="star-4" />
+          <img src="Star 5.png" alt="" id="star-5" />
+          <img src="Star 6.png" alt="" id="star-6" />
+          <img src="Star 7.png" alt="" id="star-7" />
+          <img src="Star 9.png" alt="" id="star-9" />
+          <img src="Star 9.png" alt="" id="star-10" />
+          <img src="Star 3.png" alt="" id="star-11" />
+        </div>
+        <div class="cup">
+          <img src="Vector.png" alt="" />
+        </div>
+      </div>
+      <div class="win-text">
+        <span id="hurray">HURRAY!!</span>
+        <span id="you-won">YOU WON THE GAME</span>
+      </div>
+      <div class="playagain2">
+        <button class="button">PLAY AGAIN</button>
+      </div>
+      <div class="rule3">
+        <div class="rules"><span class="next-rules">RULES</span></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

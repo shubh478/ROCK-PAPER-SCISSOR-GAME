@@ -1,0 +1,602 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,700;1,800&family=Roboto:wght@100;500&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  background-color: #8cc461;
+  overflow: hidden;
+}
+* {
+  box-sizing: 100%;
+}
+.score {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  border: 2px solid white;
+  justify-content: space-evenly;
+  height: 130px;
+  max-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  /* visibility: hidden; */
+}
+.title {
+  position: relative;
+  font-family: Roboto;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  right: 3rem;
+  bottom: -10px;
+}
+.computerscore {
+  position: relative;
+
+  height: 105px;
+  width: 105px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 12px 0;
+  left: 5.3rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.13em;
+
+  color: #656565;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.yourscore {
+  height: 105px;
+  width: 105px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin: 12px 0;
+  margin-right: -6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.13em;
+
+  color: #656565;
+}
+.zero {
+  color: #252525;
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0;
+  text-align: center;
+}
+.computerscore span {
+  position: relative;
+  top: 10px;
+
+  text-align: center;
+}
+.yourscore span {
+  position: relative;
+  top: 9px;
+
+  text-align: center;
+}
+.rock {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff; /* Adjust the circle color as needed */
+  border-radius: 50%; /* Makes it a circle */
+
+  position: relative;
+  border: 15px solid #0074b6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 4rem;
+  cursor: pointer;
+}
+.Scissor {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff; /* Adjust the circle color as needed */
+  border-radius: 50%; /* Makes it a circle */
+
+  position: relative;
+  border: 15px solid #bd00ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 1rem;
+  cursor: pointer;
+}
+.paper {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff; /* Adjust the circle color as needed */
+  border-radius: 50%; /* Makes it a circle */
+
+  position: relative;
+  border: 15px solid #ffa943;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 2.8rem;
+  top: 4rem;
+  cursor: pointer;
+}
+.set1circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cross {
+  width: 45px;
+  height: 45px;
+  background-color: #ff0000;
+  border-radius: 50%;
+
+  position: relative;
+  border: 5px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 17rem;
+  top: 1.5rem;
+  cursor: pointer;
+}
+.gamerules {
+  border: 8px solid #ffffff;
+  border-radius: 10px;
+  background-color: #004429;
+  width: 23vw;
+
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+
+  letter-spacing: 0;
+}
+.list-rules {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-rules li::before {
+  content: "■";
+  color: #ffd600;
+  font-size: 20px;
+  padding: 10px;
+  position: relative;
+  top: 5px;
+}
+li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  line-height: 20px;
+}
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-wrap: nowrap;
+}
+.heading span {
+  padding: 60px;
+  position: relative;
+  top: 10px;
+}
+.rules {
+  width: 5rem;
+  height: 1.6rem;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 13rem;
+  top: 0.6rem;
+}
+.next-rules {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ffffff;
+}
+.rulesection {
+  position: relative;
+  left: 27rem;
+}
+.main {
+  margin: 0 auto;
+  position: relative;
+  right: 7rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+}
+.section1 {
+  position: relative;
+  left: 18rem;
+  bottom: 2rem;
+}
+.line {
+  height: 1rem;
+  width: 8rem;
+  background-color: #000000a3;
+}
+.line1 {
+  position: relative;
+  left: 3rem;
+  top: 6.5rem;
+}
+.line2 {
+  position: relative;
+  transform-origin: 0;
+  transform: rotate(53deg);
+  top: 8rem;
+  left: 0.3rem;
+}
+.line3 {
+  position: relative;
+  transform-origin: 0;
+  transform: rotate(120deg);
+  top: 8rem;
+  left: 12rem;
+}
+
+.rule2 {
+  display: flex;
+  position: relative;
+  right: 7rem;
+  bottom: 2rem;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+.next {
+  width: 5rem;
+  height: 1.6rem;
+  border: 2px solid #ffffff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 15rem;
+  top: 0.6rem;
+  cursor: pointer;
+}
+.rule1 {
+  /* visibility: hidden; */
+  position: relative;
+  left: 2rem;
+  cursor: pointer;
+}
+.section1 {
+  /* visibility: hidden; */
+}
+/* .rock1 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff; 
+  border-radius: 50%; 
+  position: relative;
+  border: 15px solid #FFA943;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 4rem;
+} */
+.rock2 {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff; /* Adjust the circle color as needed */
+  border-radius: 50%; /* Makes it a circle */
+
+  position: relative;
+  border: 15px solid #bd00ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 4rem;
+  box-shadow: 0px 1px 62px 0px rgba(46, 154, 37, 0.39);
+  /* color: rgba(46, 154, 37, 0.39); */
+}
+.pc-picked span,
+.youpicked span {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #ffffff;
+}
+.afterselection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 22rem;
+}
+.circle {
+  width: 250px;
+  height: 250px;
+
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.circle div {
+  position: absolute;
+
+  border-radius: 50%;
+}
+
+.circle div:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(29, 168, 43, 0.79);
+}
+
+.circle div:nth-child(2) {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(46, 154, 37, 0.39);
+  z-index: 2;
+}
+
+.circle div:nth-child(3) {
+  width: 70%;
+  height: 70%;
+  background-color: rgba(46, 154, 37, 0.39);
+  z-index: 3;
+}
+
+.childchange {
+  width: 40%;
+  height: 40%;
+  background-color: #ffffff;
+  /* border: 15px solid #ffa943; */
+  border: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+}
+.rock1 img {
+  position: relative;
+  
+  z-index: 5;
+}
+.youpicked {
+  position: relative;
+}
+.rule-display {
+  /* visibility: hidden; */
+}
+.afterselection {
+  /* visibility: hidden; */
+}
+.result {
+  display: flex;
+  flex-direction: column;
+}
+#win {
+  font-family: Roboto;
+  font-size: 39px;
+  font-weight: 800;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+#against {
+  position: relative;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  left: 1rem;
+}
+.pc-picked {
+  position: relative;
+  left: 4rem;
+}
+.youpicked span {
+  position: relative;
+  left: 4rem;
+  top: 1rem;
+  z-index: 7;
+}
+.pc-picked span {
+  position: relative;
+  left: 1.5rem;
+  top: 1rem;
+  z-index: 9;
+}
+.button {
+  position: relative;
+  left: 1.4rem;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: rgba(107, 107, 107, 1);
+  top: 0.6rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+.playagain {
+  position: relative;
+  height: 2.6rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 1);
+  left: 2rem;
+  border-radius: 10px;
+}
+.game-display {
+  /* visibility: hidden; */
+}
+.win-celebration {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 53rem;
+  left: 2rem;
+  /* visibility: hidden; */
+}
+.cup {
+  position: relative;
+  left: 6.7rem;
+}
+#star-1 {
+  position: relative;
+  left: 20rem;
+  top: 12rem;
+}
+#star-2 {
+  position: relative;
+  top: 8rem;
+  right: 9rem;
+}
+#star-10 {
+  position: relative;
+  right: 23rem;
+
+  top: 2.5rem;
+}
+#star-3 {
+  position: relative;
+  right: 9rem;
+  bottom: 4rem;
+}
+#star-4 {
+  position: relative;
+  right: 5rem;
+  bottom: 3rem;
+}
+#star-7 {
+  position: relative;
+  left: 4rem;
+  top: 1rem;
+}
+#star-9 {
+  position: relative;
+  right: 4.5rem;
+}
+#star-11 {
+  position: relative;
+  top: 11rem;
+  right: 25rem;
+}
+.win-text {
+  position: relative;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#hurray {
+  font-family: Roboto;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 107px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+#you-won {
+  position: relative;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 107px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  bottom: 2rem;
+}
+.playagain2 {
+  position: relative;
+  height: 2.6rem;
+  width: 10rem;
+  background-color: rgba(255, 255, 255, 1);
+  bottom: 3rem;
+  right: 1rem;
+
+  border-radius: 10px;
+}
+.rule3 {
+  position: relative;
+  left: 21rem;
+  bottom: 3rem;
+  cursor: pointer;
+
+}
+.hidden {
+  visibility: hidden;
+}
+/* #hidden {
+  visibility: hidden;
+} */
+.pcselection {
+  position: relative;
+  right: 3rem;
+}
+#win {
+  position: relative;
+  left: 1rem;
+  top: 2rem;
+}
+#loss {
+  position: relative;
+  font-family: Roboto;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  left: 1rem;
+}
